@@ -32,9 +32,9 @@ public class WorldBlocks {
         //map,ServerpartID:part,part,...
         String map = "map,1:";
         int elementNumber = 0;
-        if (x >= viewDistance && x < NLFWelt.SERVERPART_SIZE - viewDistance) {
-            if (z >= viewDistance && z < NLFWelt.SERVERPART_SIZE - viewDistance) {
-                if (y >= viewDistance && y < NLFWelt.SERVERPART_SIZE - viewDistance) {
+        if (x >= viewDistance && x <= NLFWelt.SERVERPART_SIZE - viewDistance) {
+            if (z >= viewDistance && z <= NLFWelt.SERVERPART_SIZE - viewDistance) {
+                if (y >= viewDistance && y <= NLFWelt.SERVERPART_SIZE - viewDistance) {
                     for (int i = 0; i < 2 * viewDistance; i++) {
                         for (int j = 0; j < 2 * viewDistance; j++) {
                             for (int k = 0; k < 2 * viewDistance; k++) {
